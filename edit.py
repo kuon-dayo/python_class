@@ -9,7 +9,7 @@ from typing import Any
 import pandas as pd
 
 ROOT_DIR = Path(__file__).resolve().parent
-ENV_FILE = ROOT_DIR / "OPENAI_API_KEY.txt"
+ENV_FILE = ROOT_DIR / 
 DATA_FILE = ROOT_DIR / "data.csv"
 
 
