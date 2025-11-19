@@ -7,8 +7,8 @@ DATA_FILE = ROOT_DIR / "data.csv"
 
 df = pd.read_csv(DATA_FILE)
 
-df_row = 0
-df_title = df.loc[df_row]['title'].strip()
+df_row = 224
+output_csv = df.loc[df_row]
 
-print(df_title)
-
+output_csv.to_csv("output_row_224.csv",)
+print(output_csv)

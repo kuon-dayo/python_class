@@ -2,13 +2,14 @@ import pandas as pd
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent
-ENV_FILE = ROOT_DIR / "OPENAI_API_KEY.txt"
 DATA_FILE = ROOT_DIR / "data.csv"
 
 df = pd.read_csv(DATA_FILE)
 
-df_row = 0
-df_title = df.loc[df_row]['title'].strip()
+title_list = df.loc[:]['title']
 
-print(df_title)
+title_list = title_list.str.strip()
 
+print(title_list.head())
+
+title_list.to_csv("title_dataset.csv")
