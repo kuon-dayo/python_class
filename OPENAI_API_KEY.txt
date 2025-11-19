@@ -1,4 +1,4 @@
-OPENAI_API_KEY=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
+OPENAI_API_KEY=’自分のAPIKEY'
 
 # Example manual request for quick testing
 curl https://api.openai.com/v1/responses \
